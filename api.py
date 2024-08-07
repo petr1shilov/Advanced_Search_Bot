@@ -19,7 +19,7 @@ class AnswerApi:
 
     def api_answer(self, doc_path: str, key_word: str):
         df = pd.read_excel(f"files/{doc_path}")
-        df = df[["Authors", "Title", "Abstract"]]
+        # df = df[["Authors", "Title", "Abstract"]]
         responce_col = []
         for i in range(len(df)):
             text = f"{df.iloc[i]['Title']}\n{df.iloc[i]['Abstract']}"
