@@ -38,6 +38,6 @@ class AnswerApi:
 
         df["ModelAnswer"] = responce_col
 
-        df.to_excel(f"files/{doc_path[:-5]}_response.xlsx")
+        df.to_excel(f"files/{doc_path[:-5]}_response.xlsx", index=False)
 
         return True
